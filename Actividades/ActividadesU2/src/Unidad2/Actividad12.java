@@ -26,12 +26,12 @@ public class Actividad12 {
         } else {
             // Según el mes, verificamos los días
             switch (mes) {
-                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                case 1, 3, 5, 7, 8, 10, 12:
                     if (dia < 1 || dia > 31) {
                         fechaCorrecta = false;
                     }
                     break;
-                case 4: case 6: case 9: case 11:
+                case 4, 6, 9, 11:
                     if (dia < 1 || dia > 30) {
                         fechaCorrecta = false;
                     }
@@ -44,11 +44,14 @@ public class Actividad12 {
             }
         }
 
+        if (anno < 0) {
+        	fechaCorrecta = false;
+        }
         // Mostramos resultado
         if (fechaCorrecta) {
             System.out.println("La fecha introducida es CORRECTA: " + dia + "/" + mes + "/" + anno);
         } else {
-            System.out.println("La fecha introducida es INCORRECTA.");
+            System.err.println("La fecha introducida es INCORRECTA.");
         }
 
         sc.close();

@@ -24,7 +24,7 @@ public class Actividad13 {
 
         // Validación
         if (hora < 0 || hora > 23 || minutos < 0 || minutos > 59 || segundos < 0 || segundos > 59) {
-            System.out.println("Hora no válida.");
+            System.err.println("Hora no válida.");
         } else {
             // Sumar un segundo
             segundos++;
