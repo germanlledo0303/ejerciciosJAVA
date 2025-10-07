@@ -9,7 +9,7 @@ public class Actividad11 {
 
 		// Pedimos el numero
 		System.out.print("Introduce una nota: ");
-		double n = sc.nextDouble();
+		int n = sc.nextInt();
 
 		// Mediante una condicional decimos si su nota es Insuficiente, Suficiente,
 		// Bien, Notable o Sobresaliente

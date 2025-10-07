@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Actividad10 {
 
 	public static void main(String[] args) {
-		
-        /*
-         * PEDIR UN NUMERO ENTRE 0 Y 9999 Y DECIR SI ES CAPICUA
-         */
+
+		/*
+		 * PEDIR UN NUMERO ENTRE 0 Y 9999 Y DECIR SI ES CAPICUA
+		 */
         var sc = new Scanner(System.in);
 
         int unidades, decenas, centenas, millares;
@@ -51,9 +51,9 @@ public class Actividad10 {
                 System.out.print(noCapicua);
             }
         } else {
-            System.out.println("Número fuera de rango.");
+            System.out.println("Número demasiado grande para este ejemplo.");
         }
 
-        sc.close();       
+        sc.close();
 	}
 }
