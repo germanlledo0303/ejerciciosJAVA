@@ -21,7 +21,7 @@ public class Actividad5 {
 		Random random = new Random();
 
 		// Pedir tamaño de la combinacion
-		System.out.println("Introduce el tamaño de la combinacion");
+		System.out.println("Introduce el tamaño de la combinacion: ");
 		int tam = sc.nextInt();
 
 		int[] combinacion = new int[tam];// Creamos la combinacion con el tamaño indicado
