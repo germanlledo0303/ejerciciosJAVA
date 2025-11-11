@@ -22,7 +22,7 @@ public class Actividad9 {
 		System.out.println("INTRODUCCIÓN DE NOTAS");
 		System.out.println("Introduce las notas de los 5 alumnos:");
 		for (int i = 0; i < 5; i++) {
-			System.out.println("\n--- ALUMNO " + (i + 1) + " ---");
+			System.out.println("--- ALUMNO " + (i + 1) + " ---");
 			for (int j = 0; j < 3; j++) {
 				System.out.print("  Trimestre " + (j + 1) + ": ");
 				notas[i][j] = sc.nextInt();
