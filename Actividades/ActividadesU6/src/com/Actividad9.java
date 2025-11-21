@@ -19,12 +19,18 @@ public class Actividad9 {
 	 * mensaje central.
 	 */
 	public static void main(String[] args) {
-		String frase = "Javalín, javalón    Hola mundo1";
+		String frase1 = "Javalín, javalón    Hola mundo";
 		String frase2 = "Hola mundo2	javalén, len, len";
 		String frase3 = "Hola mundo3";
 
-		if (esIdiomaJavalandia(frase)) {
-			System.out.println("Mensaje: " + traducir(frase));
+		resultado(frase1);
+		resultado(frase2);
+		resultado(frase3);
+	}
+
+	public static void resultado(String f) {
+		if (esIdiomaJavalandia(f)) {
+			System.out.println("Mensaje: " + traducir(f));
 		} else {
 			System.out.println("No es idioma Javalandia");
 		}
@@ -39,7 +45,6 @@ public class Actividad9 {
 			String sinInicio = frase.substring("Javalín, javalón".length());
 			return sinInicio.trim();
 		} else {
-			// Quitar muletilla final
 			int posicion = frase.indexOf("javalén, len, len");
 			return frase.substring(0, posicion).trim();
 		}

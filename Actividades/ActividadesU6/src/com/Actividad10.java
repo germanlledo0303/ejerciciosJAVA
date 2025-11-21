@@ -28,13 +28,12 @@ public class Actividad10 {
 		char[] conjunto1 = { 'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v' };
 		char[] conjunto2 = { 'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's' };
 
-		String texto = "PaquiTo";
+		String texto = "Paquito";
 		System.out.println("Texto original: " + texto);
 		System.out.println("Texto codificado: " + codificarTexto(conjunto1, conjunto2, texto));
 	}
 
 	public static char codifica(char conjunto1[], char conjunto2[], char c) {
-		// Convertir a minúscula para buscar
 		char minuscula = Character.toLowerCase(c);
 
 		// Buscar en el conjunto1
