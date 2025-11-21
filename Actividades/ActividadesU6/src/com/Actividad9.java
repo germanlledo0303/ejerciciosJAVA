@@ -19,8 +19,29 @@ public class Actividad9 {
 	 * mensaje central.
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String frase = "Javalín, javalón    Hola mundo1";
+		String frase2 = "Hola mundo2	javalén, len, len";
+		String frase3 = "Hola mundo3";
 
+		if (esIdiomaJavalandia(frase)) {
+			System.out.println("Mensaje: " + traducir(frase));
+		} else {
+			System.out.println("No es idioma Javalandia");
+		}
 	}
 
+	public static boolean esIdiomaJavalandia(String frase) {
+		return frase.startsWith("Javalín, javalón") || frase.endsWith("javalén, len, len");
+	}
+
+	public static String traducir(String frase) {
+		if (frase.startsWith("Javalín, javalón")) {
+			String sinInicio = frase.substring("Javalín, javalón".length());
+			return sinInicio.trim();
+		} else {
+			// Quitar muletilla final
+			int posicion = frase.indexOf("javalén, len, len");
+			return frase.substring(0, posicion).trim();
+		}
+	}
 }
